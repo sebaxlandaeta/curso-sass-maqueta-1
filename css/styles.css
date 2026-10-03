@@ -1,0 +1,170 @@
+header {
+  width: 100%;
+  height: 15vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+header > div {
+  width: 15%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D95496;
+}
+header > nav {
+  width: 40%;
+  height: 100%;
+}
+header > nav > ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Staatliches", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  height: auto;
+}
+main > section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+section > div:first-child {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  padding: 1rem;
+}
+section > div:first-child > div:first-child {
+  position: relative;
+  width: 70%;
+  height: 80%;
+  margin-bottom: 5rem;
+}
+section > div:first-child > div:first-child > div {
+  position: absolute;
+  z-index: 5;
+  top: 60px;
+  left: 60px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(18deg, rgb(236, 250, 40) 0%, rgb(196, 142, 180) 65%, rgb(194, 82, 170) 100%);
+}
+section > div:first-child > div:first-child > div + img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 10;
+  display: block;
+}
+
+section > div:nth-child(2) {
+  width: 40%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section > div:nth-child(2) > h1 {
+  font-size: 4rem;
+  margin: 0 0 1rem 0;
+  color: rgb(15, 122, 245);
+}
+section > div:nth-child(2) > span {
+  font-size: 1.1rem;
+  margin: 0 0 12rem 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+section > div:last-child {
+  position: absolute;
+  display: flex;
+  background-color: purple;
+  width: 60%;
+  height: 20vh;
+  bottom: 1.4rem;
+  right: 2rem;
+  z-index: 15;
+}
+section > div:last-child > .card, section > div:last-child > div:last-child, section > div:last-child > div:nth-child(3), section > div:last-child > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  background-color: #32c0b4;
+  color: white;
+  cursor: pointer;
+}
+section > div:last-child > .card > svg, section > div:last-child > div:last-child > svg, section > div:last-child > div:nth-child(3) > svg, section > div:last-child > div:nth-child(2) > svg {
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+section > div:last-child > div:nth-child(2) {
+  background-color: rgb(229, 179, 87);
+}
+section > div:last-child > div:nth-child(3) {
+  background-color: #D95496;
+}
+section > div:last-child > div:last-child {
+  background-color: rgb(15, 122, 245);
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  padding: 3rem;
+  background-color: #32c0b4;
+}
+footer > h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  color: white;
+}
+footer > div {
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+footer > div > div {
+  width: 50%;
+  height: 100%;
+  margin: 0.5rem 0 0 2rem;
+  border-top: 1px solid white;
+}
+footer > div > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 1rem 0 1rem;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

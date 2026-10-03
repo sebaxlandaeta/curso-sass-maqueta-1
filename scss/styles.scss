@@ -1,0 +1,154 @@
+@import 'header';
+
+$learning:#32c0b4;
+$philosophy: rgb(229, 179, 87);
+$practice: #D95496;
+$games: rgb(15, 122, 245);
+
+* {
+    box-sizing: border-box;
+      font-family: "Staatliches", sans-serif;
+}
+
+body {
+   margin: 0;
+}
+
+main {
+    height: auto;
+    & > section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+}
+
+section > div:first-child {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    padding: 1rem;
+    & > div:first-child {
+        position: relative;
+        width: 70%;
+        height: 80%;
+        margin-bottom: 5rem;
+    
+        & > div {
+            position: absolute;
+            z-index: 5;
+            top: 60px; 
+            left: 60px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(18deg,rgba(236, 250, 40, 1) 0%, rgb(196, 142, 180) 65%, rgb(194, 82, 170) 100%);
+
+            & + img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 10;
+                display: block;
+            }
+        }
+    }
+} 
+
+section > div:nth-child(2) {
+    width: 40%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    & > h1 {
+        font-size: 4rem;
+        margin: 0 0 1rem 0;
+        color: $games;
+    }
+
+    & > span {
+        font-size: 1.1rem;
+        margin:0 0 12rem 0;
+        font-weight: bold;
+        text-transform: uppercase;
+        align-self: flex-start;
+    }
+
+}
+
+section > div:last-child {
+    position: absolute;
+    display: flex;
+    background-color: purple;
+    width: 60%;
+    height: 20vh;
+    bottom: 1.4rem;
+    right: 2rem;
+    z-index: 15;
+    & > .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        background-color: $learning;
+        color: white;
+        cursor: pointer;
+        & > svg {
+            width: 35px;
+            height: 35px;
+            margin-bottom: 10px;
+        }
+    }
+
+    & > div:nth-child(2) {
+        @extend .card;
+        background-color: $philosophy;
+    }
+
+    & > div:nth-child(3) {
+        @extend .card;
+        background-color: $practice;
+    }
+
+    & > div:last-child {
+        @extend .card;
+        background-color: $games;
+    }
+}
+
+
+footer {
+    width: 100%;
+    height: 50vh;
+    padding: 3rem;
+    background-color: $learning;
+    & > h2 {
+        font-size: 2rem;
+        margin: 2rem;
+        color: white;
+    }
+
+    & > div {
+        width: 100%;
+        height: 40%;
+        display: flex;
+        & > div {
+            width: 50%;
+            height: 100%;
+            margin: 0.5rem 0 0 2rem;
+            border-top: 1px solid white;
+        }
+
+        & > p {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0 1rem 0 1rem;
+            color: white;
+        }
+    }
+}
